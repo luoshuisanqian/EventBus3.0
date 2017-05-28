@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_bus_send"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.day05018.eventbus170518.EventBusSendActivity">
+
+    <Button
+        android:id="@+id/send_main"
+        android:layout_width="match_parent"
+        android:text="主线程发送数据"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/send_sticky"
+        android:layout_width="match_parent"
+        android:text="接收粘性数据"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="显示数据"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+事件总线分发库EventBus：EVentBus是一个发布（publisher）/订阅（subscriber）的事件总线
+1.什么是事件总线管理：
+（1）将事件放到队列里，用于管理和分发。
+（2）保证应用的各部分之间高效的通信及数据、事件分发
+（3）模块解耦
+
+2.EventBus的基本用法：分别是订阅，注册，发布，取消注册
+（1）注册：EventBus.getDefault.register(this)
+                EventBus.getDefault.register(new MyClass)
+三个参数分别是：消息订阅者（接收者） ，接收方法名，事件类
+				EventBus.getDefault.register(this, "setTextA", SetTextAEvent.class)
